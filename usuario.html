@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)),
+                  url('Fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .dashboard {
+      width: 100%;
+      max-width: 400px;
+      padding-bottom: 80px;
+    }
+
+    .header {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header .title { font-size: 18px; font-weight: bold; }
+    .header .subtitle { font-size: 13px; }
+
+    .header-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-icons i {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .card {
+      background-color: white;
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    .user-card {
+      background-color: #327081;
+      color: white;
+      padding: 15px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .user-card strong {
+      font-size: 16px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .info-label {
+      color: #f0f0f0;
+    }
+
+    .info-value {
+      font-weight: bold;
+      color: white;
+    }
+
+    .config-section h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .setting-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      margin: 10px 0;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .setting-option i {
+      color: #333;
+      font-size: 16px;
+    }
+
+    .logout {
+      color: #d93025;
+      font-weight: bold;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      padding: 12px;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      max-width: 400px;
+    }
+
+    .bottom-nav i {
+      font-size: 20px;
+      color: #000000;
+      cursor: pointer;
+    }
+
+    .bottom-nav i.active {
+      color: #327081;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="header">
+      <div>
+        <div class="title">A un Click</div>
+        <div class="subtitle">Universidad Nacional</div>
+      </div>
+      <div class="header-icons">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-user-circle"></i>
+      </div>
+    </div>
+
+    <div class="card user-card">
+      <strong>Carlos Rodríguez</strong>
+      <div>carlos.rodriguez@agustiniana.edu.co</div>
+      <div class="info-row">
+        <div class="info-label">ID Estudiante:</div>
+        <div class="info-value">20230157</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Facultad:</div>
+        <div class="info-value">Ingeniería</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Programa:</div>
+        <div class="info-value">Ing. de Sistemas</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Semestre:</div>
+        <div class="info-value">5to</div>
+      </div>
+    </div>
+
+    <div class="card config-section">
+      <h3>Configuración</h3>
+      <div class="setting-option"><i class="fas fa-cog"></i>Preferencias de la app</div>
+      <div class="setting-option"><i class="fas fa-lock"></i>Privacidad y seguridad</div>
+      <div class="setting-option"><i class="fas fa-question-circle"></i>Ayuda y soporte</div>
+      <div class="setting-option logout"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="principal.html"><i class="fas fa-home"></i></a>
+    <i class="fas fa-user active"></i>
+  </div>
+</body>
+</html>

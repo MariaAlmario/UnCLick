@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - A un Click</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), 
+                    url('Fondo.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    .register-container {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .icon-circle {
+      background-color: #000000;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .register-button {
+      background-color: #4d4d54;
+      color: #fff;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .register-button:hover {
+      background-color: #000000;
+    }
+
+    .login-link {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .login-link a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    .icon-circle img {
+        width: 60px;
+    }
+  </style>
+</head>
+<body>
+    <div class="background" ></div>
+     <div class="register-container">
+    <div class="icon-circle"><img src="click-izquierdo.png" alt="Click"></div>
+    <div class="title">Crea tu cuenta</div>
+    <div class="subtitle">Regístrate para acceder</div>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" placeholder="Tu nombre completo" required />
+      </div>
+
+      <div class="form-group">
+        <label for="institution">Institución</label>
+        <select id="institution" required>
+          <option value="">Seleccione su institución</option>
+          <option value="UNAM">Universitaria Agustiniana</option>
+          <option value="IPN">Otra 1</option>
+          <option value="UAM">Otra 2</option>
+          <option value="ITESM">Otra 3</option>
+          <option value="UAEM">Otra 4</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo institucional</label>
+        <input type="email" id="email" placeholder="usuario@universidad.edu" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="********" required />
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirmar contraseña</label>
+        <input type="password" id="confirm-password" placeholder="********" required />
+      </div>
+
+      <button type="submit" class="register-button">Registrarse</button>
+    </form>
+
+    <div class="login-link">
+      ¿Ya tienes cuenta? <a href="Inicio.html">Inicia sesión</a>
+    </div>
+  </div>
+</body>
+</html>
